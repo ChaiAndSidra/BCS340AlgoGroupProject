@@ -9,7 +9,9 @@
 //libraries 
 #include <iostream>
 #include <string>
-
+#include <ctime>
+#include <time.h> 
+#include <stdlib.h>
 using namespace std;
 int main()
 {
@@ -45,19 +47,19 @@ int main()
 
 		if (choice == 3)
 		{
-			cout << "code for selection sort" << endl;
+			cout << "code for bubble sort" << endl;
 
 		}//end of choice 3
 
 		if (choice == 4)
 		{
-			cout << "code for heap sort" << endl;
+			cout << "code for merge sort" << endl;
 
 		}//end of choice 4
 
 		if (choice == 5)
 		{
-			cout << "code for merge sort" << endl;
+			cout << "code for quick sort" << endl;
 
 		}//end of choice 5
 
