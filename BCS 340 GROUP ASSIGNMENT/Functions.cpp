@@ -153,31 +153,37 @@ void quickSort(int arr[], int left, int right)
 }
 
 //Calculating  for heapsort algorithm
-void percolate(int a[], int n, int i) {
-    int highest = i;
-    int left = 2 * i + 1;
-    int right = 2 * i + 2;
+void heapify(int a[], int nodes, int root) {
+    int highest = root;
+    int left = 2 * root + 1;
+    int right = 2 * root + 2;
 
-    if (left < n && a[left] > a[highest]) {
+    if (left < nodes && a[left] > a[highest]) {
         highest = left;
     }
-    else if (right < n && a[right] > a[highest]) {
+    if (right < nodes && a[right] > a[highest]) {
         highest = right;
     }
-    else if (highest != i) {
-        swap(a[i], a[highest]);
-        percolate(a, n, highest);
+    if (highest != root) {
+        swap(a[root], a[highest]);
+        heapify(a, nodes, highest);
     }
 }
 //sorting using heapsort
-void heapSort(int a[], int n) {
-    for (int i = n / 2 - 1; i >= 0; i--) {
-        percolate(a, n, i);
-    }
-    for (int i = n - 1; i >= 0; i--) {
-        swap(a[0], a[1]);
-        percolate(a, i, 0);
-    }
+void heapSort(int a[], int n){
+  for(int i=n/2-1; i>=0; i--){
+    heapify(a,n,i);
+  }
+  for(int i=n-1; i>0; i--){
+    swap(a[0], a[i]);
+    heapify(a,i,0);
+  }
+}
+void printArray(int arr[], int n)
+{
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << " ";
+    cout << "\n";
 }
 
 //print 50 array elements
