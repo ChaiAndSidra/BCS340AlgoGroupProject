@@ -76,7 +76,6 @@ int main()
 			cout << "Merge sort..." << endl;
 			mergeSort(array,0,SIZE-1);
 			printFirstFifty(array);
-			//test
 
 		}//end of choice 4
 
