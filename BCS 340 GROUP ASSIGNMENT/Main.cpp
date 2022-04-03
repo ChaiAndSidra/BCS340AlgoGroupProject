@@ -85,6 +85,10 @@ int main()
 		if (choice == 6)
 		{
 			cout << "Heap sort..." << endl;
+			heapSort(a,nodes);
+			nodes = sizeof(a)/sizeof(a[0]);
+			////////print array
+			
 
 		}//end of choice 6
 		
