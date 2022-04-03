@@ -181,9 +181,9 @@ void heapSort(int a[], int n) {
 }
 
 //print 50 array elements
-void printFirstFifty(int a[], int size)
+void printFirstFifty(int a[])
 {
-    for(int i = 0; i < size;i++)
+    for(int i = 0; i < 50;i++)
       {
         cout << a[i] << " ";
       }
