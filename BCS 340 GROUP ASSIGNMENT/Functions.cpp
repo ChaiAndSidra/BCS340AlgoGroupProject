@@ -178,3 +178,13 @@ void heapSort(int a[], int n) {
         percolate(a, i, 0);
     }
 }
+
+//print 50 array elements
+void printFirstFifty(int a[], int size)
+{
+    for(int i = 0; i < size;i++)
+      {
+        cout << a[i] << " ";
+      }
+}
+
