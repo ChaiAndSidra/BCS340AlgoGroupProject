@@ -86,14 +86,13 @@ int main()
 
 		}//end of choice 6
 		
-		cout << "\n" << float(clock()-bc)/CLOCKS_PER_SEC <<"sec";
-	} 
+	}		 
 	
 	while (choice != 7);
 	{
 		cout << "Thankyou for using the 'Sorting Algorithms menu application' you have exited the program" << endl;
 	}
-
+	cout << "\n" << float(clock()-bc)/CLOCKS_PER_SEC <<"sec";
 	return 0;
 }///end of main 
 
