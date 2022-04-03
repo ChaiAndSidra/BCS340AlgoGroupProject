@@ -47,42 +47,42 @@ int main()
 		cout<<endl;
 		if (choice == 1)
 		{
-			cout << "code for selection sort" << endl;
+			cout << "Selection sort..." << endl;
 			selectionSort(array,SIZE);
 
 		}//end of choice one
 
 		if (choice == 2)
 		{
-			cout << "code for insertion sort" << endl;
+			cout << "Insertion sort.." << endl;
 			insertionSort(array,SIZE);
 
 		}//end of choice 2
 
 		if (choice == 3)
 		{
-			cout << "code for bubble sort" << endl;
+			cout << "Bubble sort..." << endl;
 			bubbleSort(array,SIZE);
 
 		}//end of choice 3
 
 		if (choice == 4)
 		{
-			cout << "code for merge sort" << endl;
+			cout << "Merge sort..." << endl;
 			mergeSort(array,0,SIZE-1);
 
 		}//end of choice 4
 
 		if (choice == 5)
 		{
-			cout << "code for quick sort" << endl;
+			cout << "Quick sort..." << endl;
 			quickSort(array,0,SIZE-1);
 
 		}//end of choice 5
 
 		if (choice == 6)
 		{
-			cout << "code for heap sort" << endl;
+			cout << "Heap sort..." << endl;
 
 		}//end of choice 6
 		
