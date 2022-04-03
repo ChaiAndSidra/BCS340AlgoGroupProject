@@ -51,6 +51,7 @@ int main()
 		{
 			cout << "Selection sort..." << endl;
 			selectionSort(array,SIZE);
+			printFirstFifty(array);
 
 		}//end of choice one
 
@@ -58,6 +59,7 @@ int main()
 		{
 			cout << "Insertion sort.." << endl;
 			insertionSort(array,SIZE);
+			printFirstFifty(array);
 
 		}//end of choice 2
 
@@ -65,6 +67,7 @@ int main()
 		{
 			cout << "Bubble sort..." << endl;
 			bubbleSort(array,SIZE);
+			printFirstFifty(array);
 
 		}//end of choice 3
 
@@ -72,6 +75,7 @@ int main()
 		{
 			cout << "Merge sort..." << endl;
 			mergeSort(array,0,SIZE-1);
+			printFirstFifty(array);
 
 		}//end of choice 4
 
@@ -79,6 +83,7 @@ int main()
 		{
 			cout << "Quick sort..." << endl;
 			quickSort(array,0,SIZE-1);
+			printFirstFifty(array);
 
 		}//end of choice 5
 
